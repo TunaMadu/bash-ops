@@ -2,9 +2,9 @@ vim.keymap.set("n", "<leader>fp", "<cmd>Ex<CR>", { desc = "LET ME SEE MY FILES" 
 vim.keymap.set("n", "<esc>", "<cmd>nohlsearch<CR>", { desc = "CLEAR HIGHLIGHT" }) -- compromise!
 
 -- thanks tj
-vim.keymap.set("n", "<leader><leader>x", "<cmd>source % <CR>")
-vim.keymap.set("n", "<leader>x", ":.lua<CR>")
-vim.keymap.set("v", "<leader>x", ":.lua<CR>")
+-- vim.keymap.set("n", "<leader><leader>x", "<cmd>source % <CR>")
+-- vim.keymap.set("n", "<leader>x", ":.lua<CR>")
+-- vim.keymap.set("v", "<leader>x", ":.lua<CR>")
 
 -- ditch the mouse embrace the jump
 -- note: there is a weird though intended interaction with the
@@ -21,14 +21,3 @@ vim.keymap.set("n", "<C-e>", "10<C-e>", { desc = "Peak 10 lines below", noremap 
 
 vim.keymap.set("n", "<leader>n", "<cmd>tabN<CR>", { desc = "Move to next tab" })
 vim.keymap.set("t", "<esc>", "<C-\\><C-N>", { desc = "Get out of terminal mode" })
-
----
---- KEYBINDS USING PLUGINS
----
-
-local builtin = require("telescope.builtin")
-vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
-vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
-vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
-vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
-vim.keymap.set("n", "<leader>fm", builtin.keymaps, { desc = "Telescope keymaps" })

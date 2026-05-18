@@ -38,3 +38,6 @@ end
 
 -- CLIPBOARD
 vim.opt.clipboard:append("unnamedplus")
+
+vim.g.mapleader = " "
+vim.g.localleader = " "
