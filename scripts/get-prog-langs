@@ -15,4 +15,12 @@ mise use -g node
 # we could technically do this ourselves... as its just adding things to the path...
 # but because we could have multiple versions of languages and tools.... it does become a chore.
 #
-# but you never know, we might revist this in the future, but mise does a p good job rn
+# tooling should be left up to the manager of the language unless mise has a way to
+# change the version of the tool to be in sync with the language-ecosystem version
+#
+# meaning we'd be doing
+# npm install (or whatever it is these days)
+# gem install
+# and so forth...
+#
+# annoying, sure. but bash can fix some of the annoyance.

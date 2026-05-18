@@ -12,3 +12,5 @@ The following examples will not work
 
 Stow is a great alternative for symlinks. But adds unnecessary complexity
 to our configs.
+
+> we can bash damnit
