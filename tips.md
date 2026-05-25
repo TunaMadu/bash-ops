@@ -14,3 +14,7 @@ Stow is a great alternative for symlinks. But adds unnecessary complexity
 to our configs.
 
 > we can bash damnit
+
+# Let the system update damnit
+
+It sounds obvious, but try not to close things mid updates.
